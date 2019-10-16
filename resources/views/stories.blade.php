@@ -7,7 +7,7 @@
 @endsection
 
 @section('content')
-<div class="p-0 col-md-12">
+<div class="p-0 col-md-12 bo">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb arr-right ">
             <li class="breadcrumb-item"><a href="{{ route('homepage') }}">Home</a></li>
@@ -16,9 +16,9 @@
     </nav>
 </div>
 
-<div class="auto-container adjust-padding">
-    <div class="col-md-12 d-flex flex-row p-0 ">
-        <div class="col-md-9 p-0">
+<div class="auto-container adjust-padding me2">
+    <div class="col-md-12 d-flex flex-row p-0 meme">
+        <div class="col-md-9 p-0 addmecss" >
             <div class="d-flex flex-column col-md-12  p-0">
                 <div class="d-flex flex-row flex-wrap">
                     @forelse ($stories as $story)
@@ -74,8 +74,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
-            <div class="d-flex flex-row col-md-12  ">
+        <div class="col-md-3" style="margin-left:0px;">
+            <div class="d-flex flex-row col-md-12 ">
                 <div class="col-md-12" id="category-drop">
                     <h6>POPULAR CATEGORIES</h6><br>
                     @foreach ($categories as $category)
@@ -89,9 +89,9 @@
                             <input class="searchBox" type="search" style="height:30px; width: 100%;" name="search" placeholder="Search..." value="{{ request()->query('search') }}" minlength="2" autocomplete="off">
                         </form>
                     </div>
-                    <hr style="width:10%;">
+                    <hr style="width:;">
                     <p>SORT BY</p>
-                    <div class="card" style="width: 15rem;">
+                    <div class="card" style="width:150px;">
                         <form action="{{ url()->current() }}" method="GET">
                             <input type="hidden" name="search" value="{{ request()->query('search') }}">
                             <ul class="list-group list-group-flush">
