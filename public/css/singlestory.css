@@ -45,18 +45,19 @@
 }
 
 img.stories {
-  width: 50%;
+  width: 400px;
   height: 400px;
-  object-fit: contain;
+  margin-bottom: 10px;
 }
 
 .subContent {
-  padding: 0px 0px 0 390px;
+
 }
 
 div.subContent > p {
-  text-align: center;
-  padding-right: 300px;
+  text-align: justify;
+  padding: 20px;
+
 }
 
 div.subContent > p.pLast {
@@ -147,7 +148,7 @@ a.slideInLeft {
 /* App Section ends */
 
 /* Media querries for resposiveness */
-@media(min-width: 2560px) {
+/* @media(min-width: 2560px) {
   div.subContent {
     padding: 0 390px 0 390px;
   }
@@ -224,6 +225,6 @@ a.slideInLeft {
   a.slideInLeft {
   padding-bottom: 20px;
   }
-}
+} */
 
 

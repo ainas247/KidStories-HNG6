@@ -33,9 +33,10 @@
                     @endif
                     
                 </div> <!-- Bookmark story ends -->
+                <br>
 
                 <!-- Stories -->
-                <img class="stories" src="{{$story->image_url ?? '/images/placeholder.png'}}" >             
+                <center><img class="stories" src="{{$story->image_url ?? '/images/placeholder.png'}}" >   </center>          
                 <p>{{$story->body}} </p>
             </div>
 
